@@ -1,0 +1,1554 @@
+# Pages CMS configuration — https://pagescms.org/docs
+#
+# Content lives in content/*.json. A commit here triggers the GitHub Actions
+# workflow, which runs scripts/build.mjs and redeploys the site.
+
+media:
+  - name: gallery
+    label: Gallery photos
+    input: images/gallery
+    output: images/gallery
+    extensions: [jpg, jpeg, png, webp]
+  - name: logos
+    label: Client logos
+    input: assets/img
+    output: assets/img
+    extensions: [jpg, jpeg, png, svg, webp]
+  - name: documents
+    label: Documents
+    input: assets/docs
+    output: assets/docs
+    extensions: [pdf]
+
+content:
+  - name: gallery
+    label: Gallery
+    type: file
+    path: content/gallery.json
+    format: json
+    fields:
+      - name: photos
+        label: Photos
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Full-size image, type: image, options: { media: gallery } }
+          - { name: thumbnail, label: Thumbnail, type: image, options: { media: gallery } }
+          - { name: alt, label: Description (alt text), type: string }
+
+  - name: clients
+    label: Clients & partners
+    type: file
+    path: content/clients.json
+    format: json
+    fields:
+      - name: logos
+        label: Logos
+        type: object
+        list: true
+        fields:
+          - { name: logo, label: Logo image, type: image, options: { media: logos } }
+          - { name: name, label: Client name, type: string }
+
+  - name: site_en
+    label: Site text — English
+    type: file
+    path: content/site.en.json
+    format: json
+    fields:
+      - name: _title
+        label: "Page title"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: nav
+        label: "Navigation"
+        type: object
+        fields:
+          - { name: home, label: "home", type: string }
+          - { name: services, label: "services", type: string }
+          - { name: training, label: "training", type: string }
+          - { name: gallery, label: "gallery", type: string }
+          - { name: about, label: "about", type: string }
+          - { name: clients, label: "clients", type: string }
+          - { name: verify, label: "verify", type: string }
+          - { name: contact, label: "contact", type: string }
+          - { name: cta, label: "Button", type: string }
+          - { name: gsol, label: "gsol", type: string }
+          - { name: gco, label: "gco", type: string }
+          - { name: iso, label: "iso", type: string }
+      - name: ft
+        label: "Footer"
+        type: object
+        fields:
+          - { name: li, label: "li", type: string }
+          - { name: c5, label: "c5", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: c, label: "c", type: string }
+          - { name: c1, label: "c1", type: string }
+          - { name: c2, label: "c2", type: string }
+          - { name: c3, label: "c3", type: string }
+          - { name: c4, label: "c4", type: string }
+          - { name: r, label: "r", type: string }
+          - { name: r1, label: "r1", type: string }
+          - { name: r2, label: "r2", type: string }
+          - { name: r3, label: "r3", type: string }
+          - { name: k, label: "k", type: string }
+          - { name: b1, label: "b1", type: string }
+          - { name: b2, label: "b2", type: string }
+          - { name: vis, label: "vis", type: string }
+      - name: hero
+        label: "Hero (top of page)"
+        type: object
+        fields:
+          - { name: hqb, label: "hqb", type: string }
+          - { name: hqp, label: "hqp", type: string }
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h1, label: "Heading", type: string }
+          - { name: lede, label: "Intro", type: text }
+          - { name: cta1, label: "cta1", type: string }
+          - { name: cta2, label: "cta2", type: string }
+          - { name: m1, label: "m1", type: string }
+          - { name: m2, label: "m2", type: string }
+          - { name: m3, label: "m3", type: string }
+          - { name: ph, label: "Placeholder", type: string }
+          - { name: p1, label: "p1", type: string }
+          - { name: p2, label: "p2", type: string }
+          - { name: p3, label: "p3", type: string }
+      - name: iso
+        label: "ISO certification"
+        type: object
+        fields:
+          - { name: dh, label: "dh", type: string }
+          - { name: dp, label: "dp", type: text }
+          - { name: dm, label: "dm", type: string }
+          - { name: cover, label: "cover", type: text }
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: a1, label: "a1", type: string }
+          - { name: a2, label: "a2", type: string }
+          - { name: a3, label: "a3", type: string }
+          - { name: a4, label: "a4", type: string }
+          - { name: a5, label: "a5", type: string }
+          - { name: c1h, label: "c1h", type: string }
+          - { name: c2h, label: "c2h", type: string }
+          - { name: c3h, label: "c3h", type: string }
+          - { name: c4h, label: "c4h", type: string }
+          - { name: c5h, label: "c5h", type: string }
+          - { name: c5p, label: "c5p", type: string }
+          - { name: sh, label: "sh", type: string }
+          - { name: s1, label: "s1", type: string }
+          - { name: s1p, label: "s1p", type: string }
+          - { name: s2, label: "s2", type: string }
+          - { name: s2p, label: "s2p", type: string }
+          - { name: s3, label: "s3", type: string }
+          - { name: s3p, label: "s3p", type: string }
+          - { name: s4, label: "s4", type: string }
+          - { name: s4p, label: "s4p", type: string }
+          - { name: s5, label: "s5", type: string }
+          - { name: s5p, label: "s5p", type: string }
+          - { name: cta, label: "Button", type: string }
+          - { name: dl, label: "dl", type: string }
+          - { name: note, label: "note", type: text }
+      - name: trn
+        label: "Training section"
+        type: object
+        fields:
+          - { name: atpe, label: "atpe", type: string }
+          - { name: atph, label: "atph", type: string }
+          - { name: atpp, label: "atpp", type: text }
+          - { name: atpreg, label: "atpreg", type: string }
+          - { name: atpb, label: "atpb", type: string }
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: p1h, label: "p1h", type: string }
+          - { name: p1a, label: "p1a", type: string }
+          - { name: p1b, label: "p1b", type: string }
+          - { name: p1c, label: "p1c", type: string }
+          - { name: p1d, label: "p1d", type: string }
+          - { name: p2h, label: "p2h", type: string }
+          - { name: p2a, label: "p2a", type: string }
+          - { name: p2b, label: "p2b", type: string }
+          - { name: p2c, label: "p2c", type: string }
+          - { name: p3h, label: "p3h", type: string }
+          - { name: p3a, label: "p3a", type: string }
+          - { name: p3b, label: "p3b", type: string }
+          - { name: p3c, label: "p3c", type: string }
+          - { name: p3d, label: "p3d", type: string }
+          - { name: cta, label: "Button", type: string }
+          - { name: ctap, label: "ctap", type: text }
+      - name: stat
+        label: "stat"
+        type: object
+        fields:
+          - { name: 1, label: "1", type: string }
+          - { name: 2, label: "2", type: string }
+          - { name: 3, label: "3", type: string }
+          - { name: 4, label: "4", type: string }
+      - name: svc
+        label: "Services section"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: tab0, label: "tab0", type: string }
+          - { name: tab1, label: "tab1", type: string }
+          - { name: tab2, label: "tab2", type: string }
+          - { name: tab3, label: "tab3", type: string }
+          - { name: tab4, label: "tab4", type: string }
+          - { name: c1k, label: "c1k", type: string }
+          - { name: c1h, label: "c1h", type: string }
+          - { name: c1p, label: "c1p", type: text }
+          - { name: c2k, label: "c2k", type: string }
+          - { name: c2h, label: "c2h", type: string }
+          - { name: c2p, label: "c2p", type: text }
+          - { name: c3k, label: "c3k", type: string }
+          - { name: c3h, label: "c3h", type: string }
+          - { name: c3p, label: "c3p", type: text }
+          - { name: cta, label: "Button", type: string }
+          - { name: ctap, label: "ctap", type: text }
+      - name: sv1
+        label: "Service 1"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv2
+        label: "Service 2"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv3
+        label: "Service 3"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv4
+        label: "Service 4"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv5
+        label: "Service 5"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv6
+        label: "Service 6"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv7
+        label: "Service 7"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv8
+        label: "Service 8"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv9
+        label: "Service 9"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv10
+        label: "Service 10"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv11
+        label: "Service 11"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv12
+        label: "Service 12"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv13
+        label: "Service 13"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv14
+        label: "Service 14"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv15
+        label: "Service 15"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv16
+        label: "Service 16"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv17
+        label: "Service 17"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv18
+        label: "Service 18"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv19
+        label: "Service 19"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: op
+        label: "Operations"
+        type: object
+        fields:
+          - { name: 1h, label: "1h", type: string }
+          - { name: 1p, label: "1p", type: string }
+          - { name: 2h, label: "2h", type: string }
+          - { name: 2p, label: "2p", type: string }
+          - { name: 3h, label: "3h", type: string }
+          - { name: 3p, label: "3p", type: string }
+          - { name: 4h, label: "4h", type: string }
+          - { name: 4p, label: "4p", type: string }
+          - { name: 5h, label: "5h", type: string }
+          - { name: 5p, label: "5p", type: string }
+      - name: gal
+        label: "Gallery"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+      - name: tc1e
+        label: "tc1e"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc1h
+        label: "tc1h"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc2e
+        label: "tc2e"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc2h
+        label: "tc2h"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc3e
+        label: "tc3e"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc3h
+        label: "tc3h"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc4e
+        label: "tc4e"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc4h
+        label: "tc4h"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: ch
+        label: "ch"
+        type: object
+        fields:
+          - { name: 1, label: "1", type: string }
+          - { name: 2, label: "2", type: string }
+          - { name: 3, label: "3", type: string }
+          - { name: 4, label: "4", type: string }
+          - { name: 5, label: "5", type: string }
+          - { name: 6, label: "6", type: string }
+          - { name: 7, label: "7", type: string }
+          - { name: 8, label: "8", type: string }
+          - { name: 9, label: "9", type: string }
+          - { name: 10, label: "10", type: string }
+          - { name: 11, label: "11", type: string }
+          - { name: 12, label: "12", type: string }
+      - name: ab
+        label: "About"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: mh, label: "mh", type: string }
+          - { name: mp, label: "mp", type: text }
+          - { name: vh, label: "vh", type: string }
+          - { name: vp, label: "vp", type: text }
+      - name: v
+        label: "v"
+        type: object
+        fields:
+          - { name: 1h, label: "1h", type: string }
+          - { name: 1p, label: "1p", type: text }
+          - { name: 2h, label: "2h", type: string }
+          - { name: 2p, label: "2p", type: text }
+          - { name: 3h, label: "3h", type: string }
+          - { name: 3p, label: "3p", type: text }
+          - { name: 4h, label: "4h", type: string }
+          - { name: 4p, label: "4p", type: text }
+      - name: sec
+        label: "sec"
+        type: object
+        fields:
+          - { name: l, label: "Label", type: string }
+          - { name: 1, label: "1", type: string }
+          - { name: 2, label: "2", type: string }
+          - { name: 3, label: "3", type: string }
+          - { name: 4, label: "4", type: string }
+          - { name: 5, label: "5", type: string }
+          - { name: 6, label: "6", type: string }
+          - { name: 7, label: "7", type: string }
+          - { name: 8, label: "8", type: string }
+          - { name: 9, label: "9", type: string }
+          - { name: 10, label: "10", type: string }
+          - { name: 11, label: "11", type: string }
+          - { name: 12, label: "12", type: string }
+      - name: cl
+        label: "Clients & partners"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: nb, label: "nb", type: string }
+          - { name: nt, label: "nt", type: text }
+          - { name: nl, label: "nl", type: string }
+      - name: ts
+        label: "Testimonials"
+        type: object
+        fields:
+          - { name: 1h, label: "1h", type: string }
+          - { name: 1q, label: "1q", type: text }
+          - { name: 1n, label: "1n", type: string }
+          - { name: 1r, label: "1r", type: string }
+          - { name: 2h, label: "2h", type: string }
+          - { name: 2q, label: "2q", type: text }
+          - { name: 2n, label: "2n", type: string }
+          - { name: 2r, label: "2r", type: string }
+          - { name: 3h, label: "3h", type: string }
+          - { name: 3q, label: "3q", type: text }
+          - { name: 3n, label: "3n", type: string }
+          - { name: 3r, label: "3r", type: string }
+          - { name: 4h, label: "4h", type: string }
+          - { name: 4q, label: "4q", type: text }
+          - { name: 4n, label: "4n", type: string }
+          - { name: 4r, label: "4r", type: string }
+          - { name: 5h, label: "5h", type: string }
+          - { name: 5q, label: "5q", type: text }
+          - { name: 5n, label: "5n", type: string }
+          - { name: 5r, label: "5r", type: string }
+      - name: ve
+        label: "Verification section"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+      - name: ce
+        label: "Certificate lookup"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: inlabel, label: "inlabel", type: string }
+          - { name: ph, label: "Placeholder", type: string }
+          - { name: verify, label: "verify", type: string }
+          - { name: empty, label: "empty", type: string }
+          - { name: loading, label: "loading", type: string }
+          - { name: neterror, label: "neterror", type: string }
+          - { name: valid, label: "valid", type: string }
+          - { name: expired, label: "expired", type: string }
+          - { name: notfound, label: "notfound", type: string }
+          - { name: notfoundmsg, label: "notfoundmsg", type: string }
+          - { name: rc, label: "rc", type: string }
+          - { name: ri, label: "ri", type: string }
+          - { name: rs, label: "rs", type: string }
+          - { name: btn, label: "btn", type: string }
+          - { name: ok, label: "ok", type: string }
+          - { name: r1, label: "r1", type: string }
+          - { name: r1v, label: "r1v", type: string }
+          - { name: r2, label: "r2", type: string }
+          - { name: r2v, label: "r2v", type: string }
+          - { name: r3, label: "r3", type: string }
+          - { name: r4, label: "r4", type: string }
+      - name: co
+        label: "Contact details"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: hd, label: "hd", type: string }
+          - { name: p, label: "Text", type: string }
+          - { name: d, label: "Description", type: string }
+          - { name: bh, label: "bh", type: string }
+          - { name: e, label: "e", type: string }
+          - { name: t, label: "t", type: string }
+          - { name: a, label: "a", type: string }
+          - { name: av, label: "av", type: string }
+          - { name: wa, label: "wa", type: string }
+          - { name: hh, label: "hh", type: string }
+          - { name: h1, label: "Heading", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: lh, label: "lh", type: string }
+          - { name: lp, label: "lp", type: string }
+          - { name: map, label: "map", type: string }
+          - { name: gh, label: "gh", type: string }
+          - { name: gp, label: "gp", type: string }
+      - name: bk
+        label: "Booking form"
+        type: object
+        fields:
+          - { name: name, label: "name", type: string }
+          - { name: company, label: "company", type: string }
+          - { name: email, label: "email", type: string }
+          - { name: phone, label: "phone", type: string }
+          - { name: service, label: "service", type: string }
+          - { name: s0, label: "s0", type: string }
+          - { name: s1, label: "s1", type: string }
+          - { name: s2, label: "s2", type: string }
+          - { name: s3, label: "s3", type: string }
+          - { name: s4, label: "s4", type: string }
+          - { name: msg, label: "msg", type: string }
+          - { name: msgph, label: "msgph", type: string }
+          - { name: send, label: "send", type: string }
+          - { name: note, label: "note", type: string }
+
+  - name: site_fr
+    label: Site text — Français
+    type: file
+    path: content/site.fr.json
+    format: json
+    fields:
+      - name: _title
+        label: "Page title"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: text }
+      - name: nav
+        label: "Navigation"
+        type: object
+        fields:
+          - { name: home, label: "home", type: string }
+          - { name: services, label: "services", type: string }
+          - { name: training, label: "training", type: string }
+          - { name: gallery, label: "gallery", type: string }
+          - { name: about, label: "about", type: string }
+          - { name: clients, label: "clients", type: string }
+          - { name: verify, label: "verify", type: string }
+          - { name: contact, label: "contact", type: string }
+          - { name: cta, label: "Button", type: string }
+          - { name: gsol, label: "gsol", type: string }
+          - { name: gco, label: "gco", type: string }
+          - { name: iso, label: "iso", type: string }
+      - name: ft
+        label: "Footer"
+        type: object
+        fields:
+          - { name: li, label: "li", type: string }
+          - { name: c5, label: "c5", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: c, label: "c", type: string }
+          - { name: c1, label: "c1", type: string }
+          - { name: c2, label: "c2", type: string }
+          - { name: c3, label: "c3", type: string }
+          - { name: c4, label: "c4", type: string }
+          - { name: r, label: "r", type: string }
+          - { name: r1, label: "r1", type: string }
+          - { name: r2, label: "r2", type: string }
+          - { name: r3, label: "r3", type: string }
+          - { name: k, label: "k", type: string }
+          - { name: b1, label: "b1", type: string }
+          - { name: b2, label: "b2", type: string }
+          - { name: vis, label: "vis", type: string }
+      - name: hero
+        label: "Hero (top of page)"
+        type: object
+        fields:
+          - { name: hqb, label: "hqb", type: string }
+          - { name: hqp, label: "hqp", type: string }
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h1, label: "Heading", type: string }
+          - { name: lede, label: "Intro", type: text }
+          - { name: cta1, label: "cta1", type: string }
+          - { name: cta2, label: "cta2", type: string }
+          - { name: m1, label: "m1", type: string }
+          - { name: m2, label: "m2", type: string }
+          - { name: m3, label: "m3", type: string }
+          - { name: ph, label: "Placeholder", type: string }
+          - { name: p1, label: "p1", type: string }
+          - { name: p2, label: "p2", type: string }
+          - { name: p3, label: "p3", type: string }
+      - name: iso
+        label: "ISO certification"
+        type: object
+        fields:
+          - { name: dh, label: "dh", type: string }
+          - { name: dp, label: "dp", type: text }
+          - { name: dm, label: "dm", type: string }
+          - { name: cover, label: "cover", type: text }
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: a1, label: "a1", type: string }
+          - { name: a2, label: "a2", type: string }
+          - { name: a3, label: "a3", type: string }
+          - { name: a4, label: "a4", type: string }
+          - { name: a5, label: "a5", type: string }
+          - { name: c1h, label: "c1h", type: string }
+          - { name: c2h, label: "c2h", type: string }
+          - { name: c3h, label: "c3h", type: string }
+          - { name: c4h, label: "c4h", type: string }
+          - { name: c5h, label: "c5h", type: string }
+          - { name: c5p, label: "c5p", type: string }
+          - { name: sh, label: "sh", type: string }
+          - { name: s1, label: "s1", type: string }
+          - { name: s1p, label: "s1p", type: string }
+          - { name: s2, label: "s2", type: string }
+          - { name: s2p, label: "s2p", type: string }
+          - { name: s3, label: "s3", type: string }
+          - { name: s3p, label: "s3p", type: string }
+          - { name: s4, label: "s4", type: string }
+          - { name: s4p, label: "s4p", type: string }
+          - { name: s5, label: "s5", type: string }
+          - { name: s5p, label: "s5p", type: string }
+          - { name: cta, label: "Button", type: string }
+          - { name: dl, label: "dl", type: string }
+          - { name: note, label: "note", type: text }
+      - name: trn
+        label: "Training section"
+        type: object
+        fields:
+          - { name: atpe, label: "atpe", type: string }
+          - { name: atph, label: "atph", type: string }
+          - { name: atpp, label: "atpp", type: text }
+          - { name: atpreg, label: "atpreg", type: string }
+          - { name: atpb, label: "atpb", type: string }
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: p1h, label: "p1h", type: string }
+          - { name: p1a, label: "p1a", type: string }
+          - { name: p1b, label: "p1b", type: string }
+          - { name: p1c, label: "p1c", type: string }
+          - { name: p1d, label: "p1d", type: string }
+          - { name: p2h, label: "p2h", type: string }
+          - { name: p2a, label: "p2a", type: string }
+          - { name: p2b, label: "p2b", type: string }
+          - { name: p2c, label: "p2c", type: string }
+          - { name: p3h, label: "p3h", type: string }
+          - { name: p3a, label: "p3a", type: string }
+          - { name: p3b, label: "p3b", type: string }
+          - { name: p3c, label: "p3c", type: string }
+          - { name: p3d, label: "p3d", type: string }
+          - { name: cta, label: "Button", type: string }
+          - { name: ctap, label: "ctap", type: text }
+      - name: stat
+        label: "stat"
+        type: object
+        fields:
+          - { name: 1, label: "1", type: string }
+          - { name: 2, label: "2", type: string }
+          - { name: 3, label: "3", type: string }
+          - { name: 4, label: "4", type: string }
+      - name: svc
+        label: "Services section"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: tab0, label: "tab0", type: string }
+          - { name: tab1, label: "tab1", type: string }
+          - { name: tab2, label: "tab2", type: string }
+          - { name: tab3, label: "tab3", type: string }
+          - { name: tab4, label: "tab4", type: string }
+          - { name: c1k, label: "c1k", type: string }
+          - { name: c1h, label: "c1h", type: string }
+          - { name: c1p, label: "c1p", type: text }
+          - { name: c2k, label: "c2k", type: string }
+          - { name: c2h, label: "c2h", type: string }
+          - { name: c2p, label: "c2p", type: text }
+          - { name: c3k, label: "c3k", type: string }
+          - { name: c3h, label: "c3h", type: string }
+          - { name: c3p, label: "c3p", type: text }
+          - { name: cta, label: "Button", type: string }
+          - { name: ctap, label: "ctap", type: text }
+      - name: sv1
+        label: "Service 1"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+      - name: sv2
+        label: "Service 2"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv3
+        label: "Service 3"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+      - name: sv4
+        label: "Service 4"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv5
+        label: "Service 5"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv6
+        label: "Service 6"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+      - name: sv7
+        label: "Service 7"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv8
+        label: "Service 8"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv9
+        label: "Service 9"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv10
+        label: "Service 10"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv11
+        label: "Service 11"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv12
+        label: "Service 12"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+      - name: sv13
+        label: "Service 13"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv14
+        label: "Service 14"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv15
+        label: "Service 15"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv16
+        label: "Service 16"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv17
+        label: "Service 17"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv18
+        label: "Service 18"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+      - name: sv19
+        label: "Service 19"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+      - name: op
+        label: "Operations"
+        type: object
+        fields:
+          - { name: 1h, label: "1h", type: string }
+          - { name: 1p, label: "1p", type: string }
+          - { name: 2h, label: "2h", type: string }
+          - { name: 2p, label: "2p", type: string }
+          - { name: 3h, label: "3h", type: string }
+          - { name: 3p, label: "3p", type: string }
+          - { name: 4h, label: "4h", type: string }
+          - { name: 4p, label: "4p", type: string }
+          - { name: 5h, label: "5h", type: string }
+          - { name: 5p, label: "5p", type: string }
+      - name: gal
+        label: "Gallery"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+      - name: tc1e
+        label: "tc1e"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc1h
+        label: "tc1h"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc2e
+        label: "tc2e"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc2h
+        label: "tc2h"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc3e
+        label: "tc3e"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc3h
+        label: "tc3h"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc4e
+        label: "tc4e"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc4h
+        label: "tc4h"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: ch
+        label: "ch"
+        type: object
+        fields:
+          - { name: 1, label: "1", type: string }
+          - { name: 2, label: "2", type: string }
+          - { name: 3, label: "3", type: string }
+          - { name: 4, label: "4", type: string }
+          - { name: 5, label: "5", type: string }
+          - { name: 6, label: "6", type: string }
+          - { name: 7, label: "7", type: string }
+          - { name: 8, label: "8", type: string }
+          - { name: 9, label: "9", type: string }
+          - { name: 10, label: "10", type: string }
+          - { name: 11, label: "11", type: string }
+          - { name: 12, label: "12", type: string }
+      - name: ab
+        label: "About"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: mh, label: "mh", type: string }
+          - { name: mp, label: "mp", type: text }
+          - { name: vh, label: "vh", type: string }
+          - { name: vp, label: "vp", type: text }
+      - name: v
+        label: "v"
+        type: object
+        fields:
+          - { name: 1h, label: "1h", type: string }
+          - { name: 1p, label: "1p", type: text }
+          - { name: 2h, label: "2h", type: string }
+          - { name: 2p, label: "2p", type: text }
+          - { name: 3h, label: "3h", type: string }
+          - { name: 3p, label: "3p", type: text }
+          - { name: 4h, label: "4h", type: string }
+          - { name: 4p, label: "4p", type: text }
+      - name: sec
+        label: "sec"
+        type: object
+        fields:
+          - { name: l, label: "Label", type: string }
+          - { name: 1, label: "1", type: string }
+          - { name: 2, label: "2", type: string }
+          - { name: 3, label: "3", type: string }
+          - { name: 4, label: "4", type: string }
+          - { name: 5, label: "5", type: string }
+          - { name: 6, label: "6", type: string }
+          - { name: 7, label: "7", type: string }
+          - { name: 8, label: "8", type: string }
+          - { name: 9, label: "9", type: string }
+          - { name: 10, label: "10", type: string }
+          - { name: 11, label: "11", type: string }
+          - { name: 12, label: "12", type: string }
+      - name: cl
+        label: "Clients & partners"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: nb, label: "nb", type: string }
+          - { name: nt, label: "nt", type: text }
+          - { name: nl, label: "nl", type: string }
+      - name: ts
+        label: "Testimonials"
+        type: object
+        fields:
+          - { name: 1h, label: "1h", type: string }
+          - { name: 1q, label: "1q", type: text }
+          - { name: 1n, label: "1n", type: string }
+          - { name: 1r, label: "1r", type: string }
+          - { name: 2h, label: "2h", type: string }
+          - { name: 2q, label: "2q", type: text }
+          - { name: 2n, label: "2n", type: string }
+          - { name: 2r, label: "2r", type: string }
+          - { name: 3h, label: "3h", type: string }
+          - { name: 3q, label: "3q", type: text }
+          - { name: 3n, label: "3n", type: string }
+          - { name: 3r, label: "3r", type: string }
+          - { name: 4h, label: "4h", type: string }
+          - { name: 4q, label: "4q", type: text }
+          - { name: 4n, label: "4n", type: string }
+          - { name: 4r, label: "4r", type: string }
+          - { name: 5h, label: "5h", type: string }
+          - { name: 5q, label: "5q", type: text }
+          - { name: 5n, label: "5n", type: string }
+          - { name: 5r, label: "5r", type: string }
+      - name: ve
+        label: "Verification section"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+      - name: ce
+        label: "Certificate lookup"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: inlabel, label: "inlabel", type: string }
+          - { name: ph, label: "Placeholder", type: string }
+          - { name: verify, label: "verify", type: string }
+          - { name: empty, label: "empty", type: text }
+          - { name: loading, label: "loading", type: string }
+          - { name: neterror, label: "neterror", type: string }
+          - { name: valid, label: "valid", type: string }
+          - { name: expired, label: "expired", type: string }
+          - { name: notfound, label: "notfound", type: string }
+          - { name: notfoundmsg, label: "notfoundmsg", type: string }
+          - { name: rc, label: "rc", type: string }
+          - { name: ri, label: "ri", type: string }
+          - { name: rs, label: "rs", type: string }
+          - { name: btn, label: "btn", type: string }
+          - { name: ok, label: "ok", type: string }
+          - { name: r1, label: "r1", type: string }
+          - { name: r1v, label: "r1v", type: string }
+          - { name: r2, label: "r2", type: string }
+          - { name: r2v, label: "r2v", type: string }
+          - { name: r3, label: "r3", type: string }
+          - { name: r4, label: "r4", type: string }
+      - name: co
+        label: "Contact details"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: hd, label: "hd", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: d, label: "Description", type: string }
+          - { name: bh, label: "bh", type: string }
+          - { name: e, label: "e", type: string }
+          - { name: t, label: "t", type: string }
+          - { name: a, label: "a", type: string }
+          - { name: av, label: "av", type: string }
+          - { name: wa, label: "wa", type: string }
+          - { name: hh, label: "hh", type: string }
+          - { name: h1, label: "Heading", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: lh, label: "lh", type: string }
+          - { name: lp, label: "lp", type: string }
+          - { name: map, label: "map", type: string }
+          - { name: gh, label: "gh", type: string }
+          - { name: gp, label: "gp", type: string }
+      - name: bk
+        label: "Booking form"
+        type: object
+        fields:
+          - { name: name, label: "name", type: string }
+          - { name: company, label: "company", type: string }
+          - { name: email, label: "email", type: string }
+          - { name: phone, label: "phone", type: string }
+          - { name: service, label: "service", type: string }
+          - { name: s0, label: "s0", type: string }
+          - { name: s1, label: "s1", type: string }
+          - { name: s2, label: "s2", type: string }
+          - { name: s3, label: "s3", type: string }
+          - { name: s4, label: "s4", type: string }
+          - { name: msg, label: "msg", type: string }
+          - { name: msgph, label: "msgph", type: string }
+          - { name: send, label: "send", type: string }
+          - { name: note, label: "note", type: string }
+
+  - name: site_ar
+    label: Site text — العربية
+    type: file
+    path: content/site.ar.json
+    format: json
+    fields:
+      - name: _title
+        label: "Page title"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: nav
+        label: "Navigation"
+        type: object
+        fields:
+          - { name: home, label: "home", type: string }
+          - { name: services, label: "services", type: string }
+          - { name: training, label: "training", type: string }
+          - { name: gallery, label: "gallery", type: string }
+          - { name: about, label: "about", type: string }
+          - { name: clients, label: "clients", type: string }
+          - { name: verify, label: "verify", type: string }
+          - { name: contact, label: "contact", type: string }
+          - { name: cta, label: "Button", type: string }
+          - { name: gsol, label: "gsol", type: string }
+          - { name: gco, label: "gco", type: string }
+          - { name: iso, label: "iso", type: string }
+      - name: ft
+        label: "Footer"
+        type: object
+        fields:
+          - { name: li, label: "li", type: string }
+          - { name: c5, label: "c5", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: c, label: "c", type: string }
+          - { name: c1, label: "c1", type: string }
+          - { name: c2, label: "c2", type: string }
+          - { name: c3, label: "c3", type: string }
+          - { name: c4, label: "c4", type: string }
+          - { name: r, label: "r", type: string }
+          - { name: r1, label: "r1", type: string }
+          - { name: r2, label: "r2", type: string }
+          - { name: r3, label: "r3", type: string }
+          - { name: k, label: "k", type: string }
+          - { name: b1, label: "b1", type: string }
+          - { name: b2, label: "b2", type: string }
+          - { name: vis, label: "vis", type: string }
+      - name: hero
+        label: "Hero (top of page)"
+        type: object
+        fields:
+          - { name: hqb, label: "hqb", type: string }
+          - { name: hqp, label: "hqp", type: string }
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h1, label: "Heading", type: string }
+          - { name: lede, label: "Intro", type: text }
+          - { name: cta1, label: "cta1", type: string }
+          - { name: cta2, label: "cta2", type: string }
+          - { name: m1, label: "m1", type: string }
+          - { name: m2, label: "m2", type: string }
+          - { name: m3, label: "m3", type: string }
+          - { name: ph, label: "Placeholder", type: string }
+          - { name: p1, label: "p1", type: string }
+          - { name: p2, label: "p2", type: string }
+          - { name: p3, label: "p3", type: string }
+      - name: iso
+        label: "ISO certification"
+        type: object
+        fields:
+          - { name: dh, label: "dh", type: string }
+          - { name: dp, label: "dp", type: string }
+          - { name: dm, label: "dm", type: string }
+          - { name: cover, label: "cover", type: text }
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: a1, label: "a1", type: string }
+          - { name: a2, label: "a2", type: string }
+          - { name: a3, label: "a3", type: string }
+          - { name: a4, label: "a4", type: string }
+          - { name: a5, label: "a5", type: string }
+          - { name: c1h, label: "c1h", type: string }
+          - { name: c2h, label: "c2h", type: string }
+          - { name: c3h, label: "c3h", type: string }
+          - { name: c4h, label: "c4h", type: string }
+          - { name: c5h, label: "c5h", type: string }
+          - { name: c5p, label: "c5p", type: string }
+          - { name: sh, label: "sh", type: string }
+          - { name: s1, label: "s1", type: string }
+          - { name: s1p, label: "s1p", type: string }
+          - { name: s2, label: "s2", type: string }
+          - { name: s2p, label: "s2p", type: string }
+          - { name: s3, label: "s3", type: string }
+          - { name: s3p, label: "s3p", type: string }
+          - { name: s4, label: "s4", type: string }
+          - { name: s4p, label: "s4p", type: string }
+          - { name: s5, label: "s5", type: string }
+          - { name: s5p, label: "s5p", type: string }
+          - { name: cta, label: "Button", type: string }
+          - { name: dl, label: "dl", type: string }
+          - { name: note, label: "note", type: string }
+      - name: trn
+        label: "Training section"
+        type: object
+        fields:
+          - { name: atpe, label: "atpe", type: string }
+          - { name: atph, label: "atph", type: string }
+          - { name: atpp, label: "atpp", type: text }
+          - { name: atpreg, label: "atpreg", type: string }
+          - { name: atpb, label: "atpb", type: string }
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: p1h, label: "p1h", type: string }
+          - { name: p1a, label: "p1a", type: string }
+          - { name: p1b, label: "p1b", type: string }
+          - { name: p1c, label: "p1c", type: string }
+          - { name: p1d, label: "p1d", type: string }
+          - { name: p2h, label: "p2h", type: string }
+          - { name: p2a, label: "p2a", type: string }
+          - { name: p2b, label: "p2b", type: string }
+          - { name: p2c, label: "p2c", type: string }
+          - { name: p3h, label: "p3h", type: string }
+          - { name: p3a, label: "p3a", type: string }
+          - { name: p3b, label: "p3b", type: string }
+          - { name: p3c, label: "p3c", type: string }
+          - { name: p3d, label: "p3d", type: string }
+          - { name: cta, label: "Button", type: string }
+          - { name: ctap, label: "ctap", type: text }
+      - name: stat
+        label: "stat"
+        type: object
+        fields:
+          - { name: 1, label: "1", type: string }
+          - { name: 2, label: "2", type: string }
+          - { name: 3, label: "3", type: string }
+          - { name: 4, label: "4", type: string }
+      - name: svc
+        label: "Services section"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: tab0, label: "tab0", type: string }
+          - { name: tab1, label: "tab1", type: string }
+          - { name: tab2, label: "tab2", type: string }
+          - { name: tab3, label: "tab3", type: string }
+          - { name: tab4, label: "tab4", type: string }
+          - { name: c1k, label: "c1k", type: string }
+          - { name: c1h, label: "c1h", type: string }
+          - { name: c1p, label: "c1p", type: text }
+          - { name: c2k, label: "c2k", type: string }
+          - { name: c2h, label: "c2h", type: string }
+          - { name: c2p, label: "c2p", type: string }
+          - { name: c3k, label: "c3k", type: string }
+          - { name: c3h, label: "c3h", type: string }
+          - { name: c3p, label: "c3p", type: text }
+          - { name: cta, label: "Button", type: string }
+          - { name: ctap, label: "ctap", type: text }
+      - name: sv1
+        label: "Service 1"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv2
+        label: "Service 2"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv3
+        label: "Service 3"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv4
+        label: "Service 4"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv5
+        label: "Service 5"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv6
+        label: "Service 6"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv7
+        label: "Service 7"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv8
+        label: "Service 8"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv9
+        label: "Service 9"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv10
+        label: "Service 10"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv11
+        label: "Service 11"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv12
+        label: "Service 12"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv13
+        label: "Service 13"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv14
+        label: "Service 14"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv15
+        label: "Service 15"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv16
+        label: "Service 16"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv17
+        label: "Service 17"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv18
+        label: "Service 18"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: sv19
+        label: "Service 19"
+        type: object
+        fields:
+          - { name: h, label: "Heading", type: string }
+          - { name: p, label: "Text", type: string }
+      - name: op
+        label: "Operations"
+        type: object
+        fields:
+          - { name: 1h, label: "1h", type: string }
+          - { name: 1p, label: "1p", type: string }
+          - { name: 2h, label: "2h", type: string }
+          - { name: 2p, label: "2p", type: string }
+          - { name: 3h, label: "3h", type: string }
+          - { name: 3p, label: "3p", type: string }
+          - { name: 4h, label: "4h", type: string }
+          - { name: 4p, label: "4p", type: string }
+          - { name: 5h, label: "5h", type: string }
+          - { name: 5p, label: "5p", type: string }
+      - name: gal
+        label: "Gallery"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+      - name: tc1e
+        label: "tc1e"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc1h
+        label: "tc1h"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc2e
+        label: "tc2e"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc2h
+        label: "tc2h"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc3e
+        label: "tc3e"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc3h
+        label: "tc3h"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc4e
+        label: "tc4e"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: tc4h
+        label: "tc4h"
+        type: object
+        fields:
+          - { name: _, label: "Title", type: string }
+      - name: ch
+        label: "ch"
+        type: object
+        fields:
+          - { name: 1, label: "1", type: string }
+          - { name: 2, label: "2", type: string }
+          - { name: 3, label: "3", type: string }
+          - { name: 4, label: "4", type: string }
+          - { name: 5, label: "5", type: string }
+          - { name: 6, label: "6", type: string }
+          - { name: 7, label: "7", type: string }
+          - { name: 8, label: "8", type: string }
+          - { name: 9, label: "9", type: string }
+          - { name: 10, label: "10", type: string }
+          - { name: 11, label: "11", type: string }
+          - { name: 12, label: "12", type: string }
+      - name: ab
+        label: "About"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: mh, label: "mh", type: string }
+          - { name: mp, label: "mp", type: text }
+          - { name: vh, label: "vh", type: string }
+          - { name: vp, label: "vp", type: text }
+      - name: v
+        label: "v"
+        type: object
+        fields:
+          - { name: 1h, label: "1h", type: string }
+          - { name: 1p, label: "1p", type: text }
+          - { name: 2h, label: "2h", type: string }
+          - { name: 2p, label: "2p", type: string }
+          - { name: 3h, label: "3h", type: string }
+          - { name: 3p, label: "3p", type: text }
+          - { name: 4h, label: "4h", type: string }
+          - { name: 4p, label: "4p", type: string }
+      - name: sec
+        label: "sec"
+        type: object
+        fields:
+          - { name: l, label: "Label", type: string }
+          - { name: 1, label: "1", type: string }
+          - { name: 2, label: "2", type: string }
+          - { name: 3, label: "3", type: string }
+          - { name: 4, label: "4", type: string }
+          - { name: 5, label: "5", type: string }
+          - { name: 6, label: "6", type: string }
+          - { name: 7, label: "7", type: string }
+          - { name: 8, label: "8", type: string }
+          - { name: 9, label: "9", type: string }
+          - { name: 10, label: "10", type: string }
+          - { name: 11, label: "11", type: string }
+          - { name: 12, label: "12", type: string }
+      - name: cl
+        label: "Clients & partners"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: nb, label: "nb", type: string }
+          - { name: nt, label: "nt", type: text }
+          - { name: nl, label: "nl", type: string }
+      - name: ts
+        label: "Testimonials"
+        type: object
+        fields:
+          - { name: 1h, label: "1h", type: string }
+          - { name: 1q, label: "1q", type: text }
+          - { name: 1n, label: "1n", type: string }
+          - { name: 1r, label: "1r", type: string }
+          - { name: 2h, label: "2h", type: string }
+          - { name: 2q, label: "2q", type: text }
+          - { name: 2n, label: "2n", type: string }
+          - { name: 2r, label: "2r", type: string }
+          - { name: 3h, label: "3h", type: string }
+          - { name: 3q, label: "3q", type: text }
+          - { name: 3n, label: "3n", type: string }
+          - { name: 3r, label: "3r", type: string }
+          - { name: 4h, label: "4h", type: string }
+          - { name: 4q, label: "4q", type: text }
+          - { name: 4n, label: "4n", type: string }
+          - { name: 4r, label: "4r", type: string }
+          - { name: 5h, label: "5h", type: string }
+          - { name: 5q, label: "5q", type: text }
+          - { name: 5n, label: "5n", type: string }
+          - { name: 5r, label: "5r", type: string }
+      - name: ve
+        label: "Verification section"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+      - name: ce
+        label: "Certificate lookup"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: p, label: "Text", type: text }
+          - { name: inlabel, label: "inlabel", type: string }
+          - { name: ph, label: "Placeholder", type: string }
+          - { name: verify, label: "verify", type: string }
+          - { name: empty, label: "empty", type: string }
+          - { name: loading, label: "loading", type: string }
+          - { name: neterror, label: "neterror", type: string }
+          - { name: valid, label: "valid", type: string }
+          - { name: expired, label: "expired", type: string }
+          - { name: notfound, label: "notfound", type: string }
+          - { name: notfoundmsg, label: "notfoundmsg", type: string }
+          - { name: rc, label: "rc", type: string }
+          - { name: ri, label: "ri", type: string }
+          - { name: rs, label: "rs", type: string }
+          - { name: btn, label: "btn", type: string }
+          - { name: ok, label: "ok", type: string }
+          - { name: r1, label: "r1", type: string }
+          - { name: r1v, label: "r1v", type: string }
+          - { name: r2, label: "r2", type: string }
+          - { name: r2v, label: "r2v", type: string }
+          - { name: r3, label: "r3", type: string }
+          - { name: r4, label: "r4", type: string }
+      - name: co
+        label: "Contact details"
+        type: object
+        fields:
+          - { name: tag, label: "Eyebrow", type: string }
+          - { name: hd, label: "hd", type: string }
+          - { name: p, label: "Text", type: string }
+          - { name: d, label: "Description", type: string }
+          - { name: bh, label: "bh", type: string }
+          - { name: e, label: "e", type: string }
+          - { name: t, label: "t", type: string }
+          - { name: a, label: "a", type: string }
+          - { name: av, label: "av", type: string }
+          - { name: wa, label: "wa", type: string }
+          - { name: hh, label: "hh", type: string }
+          - { name: h1, label: "Heading", type: string }
+          - { name: h2, label: "Heading", type: string }
+          - { name: lh, label: "lh", type: string }
+          - { name: lp, label: "lp", type: string }
+          - { name: map, label: "map", type: string }
+          - { name: gh, label: "gh", type: string }
+          - { name: gp, label: "gp", type: string }
+      - name: bk
+        label: "Booking form"
+        type: object
+        fields:
+          - { name: name, label: "name", type: string }
+          - { name: company, label: "company", type: string }
+          - { name: email, label: "email", type: string }
+          - { name: phone, label: "phone", type: string }
+          - { name: service, label: "service", type: string }
+          - { name: s0, label: "s0", type: string }
+          - { name: s1, label: "s1", type: string }
+          - { name: s2, label: "s2", type: string }
+          - { name: s3, label: "s3", type: string }
+          - { name: s4, label: "s4", type: string }
+          - { name: msg, label: "msg", type: string }
+          - { name: msgph, label: "msgph", type: string }
+          - { name: send, label: "send", type: string }
+          - { name: note, label: "note", type: string }

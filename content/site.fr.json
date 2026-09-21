@@ -1,0 +1,402 @@
+{
+  "_title": {
+    "_": "RIM-HSE — Formation et Conseil en Santé, Sécurité et Environnement | Nouakchott, Mauritanie"
+  },
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "training": "Formations",
+    "gallery": "Galerie",
+    "about": "À propos",
+    "clients": "Clients",
+    "verify": "Vérifier un certificat",
+    "contact": "Contact",
+    "cta": "Réserver une consultation",
+    "gsol": "Solutions",
+    "gco": "Entreprise",
+    "iso": "Certification ISO"
+  },
+  "ft": {
+    "li": "Suivez-nous sur LinkedIn",
+    "c5": "Certification ISO",
+    "p": "Réseau d'Ingénierie Mauritanien pour la Santé, la Sécurité et l'Environnement. Formation et conseil en santé, sécurité et environnement — Nouakchott, Mauritanie.",
+    "c": "Entreprise",
+    "c1": "À propos",
+    "c2": "Nos services",
+    "c3": "Formations",
+    "c4": "Clients & Partenaires",
+    "r": "Ressources",
+    "r1": "Vérification de certificat",
+    "r2": "Réserver une consultation",
+    "r3": "Demander un devis",
+    "k": "Contact",
+    "b1": "© 2026 RIM-HSE. Tous droits réservés.",
+    "b2": "Société enregistrée en Mauritanie",
+    "vis": "Visiteurs"
+  },
+  "hero": {
+    "hqb": "Organisme de formation agréé",
+    "hqp": "HiQual UK Ltd",
+    "tag": "Créée en 2017 · Nouakchott, Mauritanie",
+    "h1": "Élever les normes de <em>sécurité industrielle</em> en Mauritanie.",
+    "lede": "Conseil HSE expert, formations certifiées et services de conformité — protéger vos équipes, sécuriser vos opérations et garantir l'excellence réglementaire.",
+    "cta1": "Réserver une consultation",
+    "cta2": "Vérifier un certificat",
+    "m1": "Conseil <b>ISO 45001</b>",
+    "m2": "Évaluations <b>HAZID / HIRA</b>",
+    "m3": "Formations <b>certifiées</b>",
+    "ph": "Pourquoi les organisations choisissent RIM-HSE",
+    "p1": "Des formations HSE de premier plan, adaptées aux normes locales et internationales",
+    "p2": "Maîtrise réglementaire — naviguer avec précision dans des réglementations complexes",
+    "p3": "Des stratégies de sécurité proactives qui réduisent les risques et améliorent l'efficacité"
+  },
+  "iso": {
+    "dh": "Brochure Certification ISO",
+    "dp": "Le portefeuille complet de certifications, nos accréditations et le processus en cinq étapes, en un document de deux pages.",
+    "dm": "PDF · 2 pages · français & anglais · 468 Ko",
+    "cover": "<img src='assets/img/iso-cover-fr.jpg' alt='Couverture de la brochure Certification ISO de RIM-HSE' loading='lazy' width='440' height='660'>",
+    "tag": "Certification ISO",
+    "h2": "Certifiez aujourd'hui, dirigez demain.",
+    "p": "Reconnu internationalement, délivré localement, approuvé mondialement. Avec AQC et MMS Certification, RIM-HSE vous accompagne de la première demande jusqu'à un système de management certifié.",
+    "a1": "Accrédité par UAF",
+    "a2": "Membre IAF",
+    "a3": "EGAC CAB #012226",
+    "a4": "Plus de 1 700 certifications délivrées",
+    "a5": "Plus de 10 pays",
+    "c1h": "Qualité & Management",
+    "c2h": "Environnement & Sécurité",
+    "c3h": "Sécurité des aliments",
+    "c4h": "IT & Sécurité de l'information",
+    "c5h": "Autres solutions",
+    "c5p": "Des solutions sur mesure pour répondre à vos besoins de conformité et de performance.",
+    "sh": "Notre processus de certification",
+    "s1": "Demande & candidature",
+    "s1p": "Nous partons de vos exigences et de votre périmètre.",
+    "s2": "Revue des documents & planification",
+    "s2p": "Nous examinons votre système et planifions l'audit.",
+    "s3": "Audit",
+    "s3p": "Audit sur site ou à distance par des experts auditeurs.",
+    "s4": "Recommandation",
+    "s4p": "Un audit réussi mène à la recommandation.",
+    "s5": "Certification",
+    "s5p": "Certificat délivré dans les deux semaines suivant la recommandation.*",
+    "cta": "Demander un devis ISO",
+    "dl": "Télécharger la brochure",
+    "note": "Visite préliminaire gratuite, sans frais cachés, avec un accompagnement continu. *Voir conditions."
+  },
+  "trn": {
+    "atpe": "Organisme de formation agréé",
+    "atph": "HiQual UK Ltd",
+    "atpp": "RIM-HSE est un Approved Training Provider reconnu par HiQual, autorisé à dispenser des sessions et des programmes de formation menant aux certifications HiQual.",
+    "atpreg": "Licence ATP/004595/26",
+    "atpb": "Consulter la licence",
+    "tag": "Formation & Certification",
+    "h2": "Développer les compétences, une certification à la fois.",
+    "p": "Des programmes de formation certifiés, conçus pour renforcer les compétences et garantir la pleine conformité aux normes internationales de sécurité.",
+    "p1h": "Intervention d'urgence",
+    "p1a": "Lutte contre l'incendie",
+    "p1b": "Premiers secours",
+    "p1c": "Intervention d'urgence",
+    "p1d": "Intervention antipollution",
+    "p2h": "Sécurité technique",
+    "p2a": "Travail en hauteur",
+    "p2b": "Espaces confinés",
+    "p2c": "Gestion des produits chimiques",
+    "p3h": "Management & développement HSE",
+    "p3a": "Gestion de l'environnement",
+    "p3b": "Méthodologies d'enquête sur les accidents",
+    "p3c": "Modules d'agent santé-sécurité",
+    "p3d": "E-learning HSE",
+    "cta": "Demander un devis formation",
+    "ctap": "Chaque formation se conclut par un certificat RIM-HSE vérifiable — contrôlez le statut de tout certificat via notre portail en ligne."
+  },
+  "stat": {
+    "1": "Au service de la Mauritanie depuis",
+    "2": "Secteurs industriels couverts",
+    "3": "Programmes de formation certifiés",
+    "4": "Certificats vérifiables en ligne"
+  },
+  "svc": {
+    "tag": "Nos services",
+    "h2": "Des solutions HSE professionnelles, de bout en bout.",
+    "p": "Dix-neuf lignes de services spécialisées couvrant le conseil, la formation, l'inspection et l'intégrité des actifs — adaptées aux réalités industrielles de la Mauritanie.",
+    "tab0": "Tous les services",
+    "tab1": "Conseil & Accompagnement",
+    "tab2": "Inspection & Intégrité",
+    "tab3": "Formation & Compétences",
+    "tab4": "Secteurs industriels",
+    "c1k": "Conseil & Conformité",
+    "c1h": "Accompagnement expert ISO 45001",
+    "c1p": "Des audits et évaluations des risques (HAZID / HIRA) aux études d'impact environnemental — pour des opérations conformes aux normes internationales.",
+    "c2k": "Équipements techniques",
+    "c2h": "Des équipements de sécurité de qualité",
+    "c2p": "Fourniture et étalonnage d'équipements de détection de gaz, EPI et maintenance des systèmes critiques de lutte contre l'incendie.",
+    "c3k": "Formations spécialisées",
+    "c3h": "Des formations industrielles certifiées",
+    "c3p": "Cours certifiés en sécurité incendie, premiers secours et travail en hauteur — dispensés par des professionnels HSE expérimentés.",
+    "cta": "Demander un devis",
+    "ctap": "Besoin d'une solution de sécurité sur mesure pour votre site ? Notre équipe est prête à étudier vos besoins — de l'étalonnage des équipements aux audits de sécurité complets."
+  },
+  "sv1": {
+    "h": "Conseil HSE",
+    "p": "Aider les organisations à améliorer la conformité, réduire les risques et renforcer la culture de sécurité."
+  },
+  "sv2": {
+    "h": "Formation Santé, Sécurité et Environnement",
+    "p": "Formations basées sur les compétences, dispensées en arabe, français et anglais."
+  },
+  "sv3": {
+    "h": "Ingénierie & Conseil technique",
+    "p": "Support technique pour les opérations industrielles, les projets d'ingénierie et les infrastructures."
+  },
+  "sv4": {
+    "h": "Inspection & Intégrité des actifs",
+    "p": "Inspection, vérification et gestion de l'intégrité des actifs industriels."
+  },
+  "sv5": {
+    "h": "Ingénierie de protection incendie",
+    "p": "Solutions industrielles de prévention, de détection et de protection incendie."
+  },
+  "sv6": {
+    "h": "Intégrité mécanique & CND",
+    "p": "Support pour tuyauteries, réservoirs, appareils sous pression et contrôles non destructifs."
+  },
+  "sv7": {
+    "h": "Assurance & Contrôle qualité (QA/QC)",
+    "p": "Inspection, audit et systèmes de management de la qualité."
+  },
+  "sv8": {
+    "h": "Marchandises dangereuses & Sécurité logistique",
+    "p": "ADR, IMDG, IATA et gestion des matières dangereuses."
+  },
+  "sv9": {
+    "h": "Sécurité construction & infrastructures",
+    "p": "HSE construction, CSTS, gestion des sous-traitants et sécurité des chantiers."
+  },
+  "sv10": {
+    "h": "Solutions de sécurité minière",
+    "p": "Gestion des risques critiques et sécurité opérationnelle minière."
+  },
+  "sv11": {
+    "h": "Services HSE pétrole & gaz",
+    "p": "Conseil et conformité HSE onshore, offshore et logistique."
+  },
+  "sv12": {
+    "h": "Services de sécurité télécom",
+    "p": "Sécurité des pylônes, sauvetage, sensibilisation RF et support des infrastructures télécom."
+  },
+  "sv13": {
+    "h": "Opérations de levage & Sécurité des grues",
+    "p": "Planification, supervision, études de levage et développement des compétences."
+  },
+  "sv14": {
+    "h": "Sécurité des flottes & des conducteurs",
+    "p": "Conduite défensive, gestion de flotte et programmes de formateurs."
+  },
+  "sv15": {
+    "h": "Préparation aux urgences & Gestion de crise",
+    "p": "Planification de la réponse d'urgence, exercices et continuité d'activité."
+  },
+  "sv16": {
+    "h": "Services environnementaux",
+    "p": "Évaluations environnementales, conformité, surveillance et durabilité."
+  },
+  "sv17": {
+    "h": "Analyse des besoins en formation & Développement des compétences",
+    "p": "Référentiels de compétences, évaluations et parcours d'apprentissage."
+  },
+  "sv18": {
+    "h": "Documentation HSE & Systèmes de management",
+    "p": "Élaboration de manuels, procédures, modes opératoires, systèmes de permis de travail et registres des risques."
+  },
+  "sv19": {
+    "h": "Coordination d'inspection tierce partie",
+    "p": "Coordination avec des partenaires d'inspection et de certification reconnus internationalement."
+  },
+  "op": {
+    "1h": "Management HSE",
+    "1p": "Développement de systèmes, audits de conformité et enquêtes sur les accidents majeurs.",
+    "2h": "Excellence opérationnelle",
+    "2p": "Élaboration de SOP et d'instructions de travail, inspection des équipements de levage.",
+    "3h": "Supervision environnementale",
+    "3p": "Permis, due diligence et études d'impact social.",
+    "4h": "Planification d'urgence",
+    "4p": "Élaboration de procédures d'urgence et de protocoles de gestion des déchets.",
+    "5h": "Solutions main-d'œuvre",
+    "5p": "Services de maintenance et de personnel qualifié pour les environnements industriels."
+  },
+  "gal": {
+    "tag": "Nos réalisations",
+    "h2": "La sécurité en action, sur chaque site.",
+    "p": "Des instants de nos formations, audits de terrain et opérations de sécurité RIM-HSE à travers la Mauritanie et la région."
+  },
+  "tc1e": {
+    "_": "Sécurité d'abord"
+  },
+  "tc1h": {
+    "_": "Premiers secours"
+  },
+  "tc2e": {
+    "_": "Haut risque"
+  },
+  "tc2h": {
+    "_": "Travail en hauteur"
+  },
+  "tc3e": {
+    "_": "Audit"
+  },
+  "tc3h": {
+    "_": "Évaluation des risques"
+  },
+  "tc4e": {
+    "_": "Urgence"
+  },
+  "tc4h": {
+    "_": "Lutte contre l'incendie"
+  },
+  "ch": {
+    "1": "Sécurité incendie",
+    "2": "Premiers secours",
+    "3": "Intervention d'urgence",
+    "4": "Intervention antipollution",
+    "5": "Travail en hauteur",
+    "6": "Espaces confinés",
+    "7": "Produits chimiques",
+    "8": "Gestion environnementale",
+    "9": "Enquête accidents",
+    "10": "Modules agent SST",
+    "11": "E-learning HSE",
+    "12": "Évaluation des risques"
+  },
+  "ab": {
+    "tag": "Qui sommes-nous",
+    "h2": "Protéger les vies. Renforcer la sécurité et l'environnement.",
+    "p": "RIM-HSE — Réseau d'Ingénierie Mauritanien pour la Santé, la Sécurité et l'Environnement — est une société mauritanienne de conseil et de formation HSE, créée en 2017 et basée à Nouakchott. Nous faisons le lien entre les normes internationales et les réalités opérationnelles locales, en aidant nos clients à maîtriser les risques, assurer la conformité et protéger leur atout le plus précieux : leurs équipes.",
+    "mh": "Notre mission",
+    "mp": "Fournir des formations, du conseil et des solutions de sécurité HSE de haute qualité qui aident les entreprises à respecter les normes internationales, réduire les risques et bâtir une culture durable de la sécurité.",
+    "vh": "Notre vision",
+    "vp": "Être le leader de confiance en matière de santé, de sécurité et d'excellence environnementale en Mauritanie et en Afrique de l'Ouest — en donnant aux organisations les moyens de protéger les vies, les biens et la planète."
+  },
+  "v": {
+    "1h": "Intégrité",
+    "1p": "Nous appliquons les normes éthiques les plus élevées dans tout ce que nous faisons, garantissant confiance et transparence avec nos clients et partenaires.",
+    "2h": "Responsabilité",
+    "2p": "Nous croyons en la protection des personnes et de l'environnement par la promotion de pratiques de travail sûres et de la conformité réglementaire.",
+    "3h": "Partenariat",
+    "3p": "Nous travaillons main dans la main avec les clients, les régulateurs et les parties prenantes pour atteindre des objectifs communs en matière de performance HSE.",
+    "4h": "Innovation",
+    "4p": "Nous adoptons la technologie et les meilleures pratiques pour proposer des solutions HSE efficaces et tournées vers l'avenir."
+  },
+  "sec": {
+    "l": "Au service des industries clés de la Mauritanie depuis 2017",
+    "1": "Mines",
+    "2": "Pétrole & Gaz",
+    "3": "Ports & Maritime",
+    "4": "Logistique & Entreposage",
+    "5": "Construction",
+    "6": "Télécommunications",
+    "7": "Services publics & Énergie",
+    "8": "Industrie manufacturière",
+    "9": "Énergies renouvelables",
+    "10": "Agriculture & Agroalimentaire",
+    "11": "Secteur public & Gouvernement",
+    "12": "Sites commerciaux & industriels"
+  },
+  "cl": {
+    "tag": "Clients & Partenaires",
+    "h2": "La confiance de tous les secteurs, avec des retours toujours positifs.",
+    "p": "RIM-HSE est fier d'accompagner des organisations des télécommunications, des mines, de l'agriculture et du pétrole & gaz avec des formations, audits et prestations de conseil HSE.",
+    "nb": "Votre logo pourrait figurer ici.",
+    "nt": "Rejoignez la liste croissante d'organisations mauritaniennes et internationales qui font confiance à RIM-HSE pour la formation, les audits et la conformité. Références et détails clients disponibles sur demande —",
+    "nl": "contactez-nous"
+  },
+  "ts": {
+    "1h": "Un professionnalisme et une compétence technique remarquables.",
+    "1q": "RIM-HSE a assuré l'installation et la maintenance de nos groupes électrogènes et panneaux solaires tout en démontrant un profond engagement HSEQ. Ils prouvent constamment leur compétence et leur professionnalisme sur le terrain.",
+    "1n": "Abdellatif Boumediane",
+    "1r": "Directeur Général · TotalEnergies Mauritanie",
+    "2h": "Une contribution majeure à l'excellence en sécurité pour nos partenaires.",
+    "2q": "Un sincère remerciement au Centre de formation RIM-HSE pour son dévouement exceptionnel dans la prestation de formations essentielles en sécurité — Premiers secours, Lutte contre l'incendie, Évaluation des risques et Travail en hauteur — à nos fournisseurs. Leur accompagnement professionnel a considérablement renforcé les compétences de nos partenaires en matière de sécurité, marquant une étape majeure vers un environnement de travail plus sûr.",
+    "2n": "Adly Magdy",
+    "2r": "Delivery Operation Center · Huawei / H-Partners",
+    "3h": "Une exécution irréprochable des inspections HSE générales.",
+    "3q": "RIM-HSE a mené avec succès nos inspections HSE complètes, incluant des évaluations essentielles de sécurité électrique, des analyses d'écarts et des contrôles qualité rigoureux.",
+    "3n": "Mohamed Lemine Mamine",
+    "3r": "Directeur Général · RIMATEL SA",
+    "4h": "A pleinement répondu à toutes nos attentes.",
+    "4q": "RIM-HSE a dispensé avec succès des formations essentielles en sécurité à notre personnel, couvrant le Travail en hauteur, la Sécurité électrique, la Lutte contre l'incendie et les Premiers secours. Les programmes ont été menés dans le strict respect des normes en vigueur et ont pleinement répondu aux attentes de notre entreprise.",
+    "4n": "Équipe de direction",
+    "4r": "EDM-SARL & DECOTECH SARL",
+    "5h": "Une excellente préparation à la réponse d'urgence.",
+    "5q": "RIM-HSE a fourni des services HSE exceptionnels, formant parfaitement notre Équipe d'intervention d'urgence (ERT) à la lutte contre l'incendie et aux premiers secours, et élaborant et testant avec succès les plans d'évacuation de nos installations.",
+    "5n": "Lalty Senhoury",
+    "5r": "Département des achats · Elite Agro Mauritania"
+  },
+  "ve": {
+    "tag": "Vérifier un certificat",
+    "h2": "Vérifiez toute attestation RIM-HSE en quelques secondes.",
+    "p": "Un outil public de vérification pour les employeurs et sous-traitants — contrôlez le titulaire, la norme et la validité de tout certificat que nous délivrons."
+  },
+  "ce": {
+    "tag": "Portail de vérification des certificats",
+    "h2": "Besoin de vérifier le statut d'un certificat ?",
+    "p": "Vérifiez l'authenticité et la validité de tout certificat de formation délivré par RIM-HSE. Saisissez le numéro du certificat pour consulter instantanément le titulaire, la formation et la validité — une assurance essentielle pour les employeurs et les sous-traitants.",
+    "inlabel": "Numéro de certificat",
+    "ph": "ex. RIMHSE/12/24/01",
+    "verify": "Vérifier",
+    "empty": "Saisissez un numéro de certificat pour vérifier son titulaire, la formation et sa validité.",
+    "loading": "Vérification…",
+    "neterror": "Impossible de contacter le service de vérification. Veuillez réessayer.",
+    "valid": "Valide",
+    "expired": "Expiré",
+    "notfound": "Aucun dossier trouvé",
+    "notfoundmsg": "Aucun certificat ne correspond à ce numéro. Veuillez vérifier et réessayer.",
+    "rc": "Entreprise",
+    "ri": "Date de délivrance",
+    "rs": "Statut",
+    "btn": "Vérifier un certificat",
+    "ok": "Dossier trouvé — Valide",
+    "r1": "Nom complet",
+    "r1v": "A. Participant",
+    "r2": "Certificat",
+    "r2v": "Travail en hauteur",
+    "r3": "N° de série",
+    "r4": "Date d'expiration"
+  },
+  "co": {
+    "tag": "Contactez-nous",
+    "hd": "Prêt à améliorer la sécurité de votre site ?",
+    "p": "Contactez-nous dès aujourd'hui pour planifier une prestation, demander un devis ou réserver une consultation.",
+    "d": "Coordonnées",
+    "bh": "Réserver une consultation",
+    "e": "Email",
+    "t": "Téléphone",
+    "a": "Adresse",
+    "av": "Avenue Feu Président Yasser Arafat, ZRB 32<br>BP 2852 — Nouakchott, Mauritanie",
+    "wa": "Contactez-nous sur WhatsApp",
+    "hh": "Horaires",
+    "h1": "Lundi — Jeudi",
+    "h2": "Vendredi",
+    "lh": "Localisation",
+    "lp": "Nouakchott, Mauritanie —",
+    "map": "Ouvrir dans Google Maps",
+    "gh": "Langues",
+    "gp": "Nous servons nos clients en français, en anglais et en arabe."
+  },
+  "bk": {
+    "name": "Nom complet",
+    "company": "Entreprise",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "service": "Service concerné",
+    "s0": "Demande générale",
+    "s1": "Conseil & Accompagnement",
+    "s2": "Inspection & Intégrité",
+    "s3": "Formation & Compétences",
+    "s4": "Secteurs industriels",
+    "msg": "Message",
+    "msgph": "Décrivez vos besoins…",
+    "send": "Envoyer la demande",
+    "note": "Ouvre votre messagerie vers enquiries@rim-hse.com"
+  }
+}

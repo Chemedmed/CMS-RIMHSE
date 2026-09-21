@@ -1,0 +1,9 @@
+name = "rim-hse-verify"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# Free tier is fine for this. If you later add a custom route like
+# api.rim-hse.com/verify, uncomment and edit:
+# routes = [
+#   { pattern = "api.rim-hse.com/verify", custom_domain = true }
+# ]

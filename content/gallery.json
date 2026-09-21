@@ -1,0 +1,84 @@
+{
+  "photos": [
+    {
+      "image": "images/gallery/gallery-01.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-01.jpg",
+      "alt": "RIM-HSE safety training photo 01"
+    },
+    {
+      "image": "images/gallery/gallery-02.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-02.jpg",
+      "alt": "RIM-HSE safety training photo 02"
+    },
+    {
+      "image": "images/gallery/gallery-03.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-03.jpg",
+      "alt": "RIM-HSE safety training photo 03"
+    },
+    {
+      "image": "images/gallery/gallery-04.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-04.jpg",
+      "alt": "RIM-HSE safety training photo 04"
+    },
+    {
+      "image": "images/gallery/gallery-05.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-05.jpg",
+      "alt": "RIM-HSE safety training photo 05"
+    },
+    {
+      "image": "images/gallery/gallery-06.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-06.jpg",
+      "alt": "RIM-HSE safety training photo 06"
+    },
+    {
+      "image": "images/gallery/gallery-07.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-07.jpg",
+      "alt": "RIM-HSE safety training photo 07"
+    },
+    {
+      "image": "images/gallery/gallery-08.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-08.jpg",
+      "alt": "RIM-HSE safety training photo 08"
+    },
+    {
+      "image": "images/gallery/gallery-09.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-09.jpg",
+      "alt": "RIM-HSE safety training photo 09"
+    },
+    {
+      "image": "images/gallery/gallery-10.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-10.jpg",
+      "alt": "RIM-HSE safety training photo 10"
+    },
+    {
+      "image": "images/gallery/gallery-11.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-11.jpg",
+      "alt": "RIM-HSE safety training photo 11"
+    },
+    {
+      "image": "images/gallery/gallery-12.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-12.jpg",
+      "alt": "RIM-HSE safety training photo 12"
+    },
+    {
+      "image": "images/gallery/gallery-13.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-13.jpg",
+      "alt": "RIM-HSE safety training photo 13"
+    },
+    {
+      "image": "images/gallery/gallery-14.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-14.jpg",
+      "alt": "RIM-HSE safety training photo 14"
+    },
+    {
+      "image": "images/gallery/gallery-15.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-15.jpg",
+      "alt": "RIM-HSE safety training photo 15"
+    },
+    {
+      "image": "images/gallery/gallery-16.jpg",
+      "thumbnail": "images/gallery/thumbs/gallery-16.jpg",
+      "alt": "RIM-HSE safety training photo 16"
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "_title": {
+    "_": "RIM-HSE — Health, Safety & Environment Training and Consulting | Nouakchott, Mauritania"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "training": "Training",
+    "gallery": "Gallery",
+    "about": "About",
+    "clients": "Clients",
+    "verify": "Verify Certificate",
+    "contact": "Contact Us",
+    "cta": "Book a Consultation",
+    "gsol": "Solutions",
+    "gco": "Company",
+    "iso": "ISO Certification"
+  },
+  "ft": {
+    "li": "Follow us on LinkedIn",
+    "c5": "ISO Certification",
+    "p": "Réseau d'Ingénierie Mauritanien pour la Santé, la Sécurité et l'Environnement. Health, Safety & Environment training and consulting — Nouakchott, Mauritania.",
+    "c": "Company",
+    "c1": "About Us",
+    "c2": "Our Services",
+    "c3": "Training Programs",
+    "c4": "Clients & Partners",
+    "r": "Resources",
+    "r1": "Certificate Lookup",
+    "r2": "Book a Consultation",
+    "r3": "Request a Quote",
+    "k": "Contact",
+    "b1": "© 2026 RIM-HSE. All Rights Reserved.",
+    "b2": "Registered company in Mauritania",
+    "vis": "Visitors"
+  },
+  "hero": {
+    "hqb": "Approved Training Provider",
+    "hqp": "HiQual UK Ltd",
+    "tag": "Est. 2017 · Nouakchott, Mauritania",
+    "h1": "Elevating industrial <em>safety standards</em> in Mauritania.",
+    "lede": "Expert HSE consulting, certified training, and compliance services — protecting your workforce, securing your operations, and ensuring regulatory excellence.",
+    "cta1": "Book a Consultation",
+    "cta2": "Verify a Certificate",
+    "m1": "<b>ISO 45001</b> Advisory",
+    "m2": "<b>HAZID / HIRA</b> Assessments",
+    "m3": "<b>Certified</b> Training",
+    "ph": "Why organisations choose RIM-HSE",
+    "p1": "Industry-leading HSE training tailored to local and international standards",
+    "p2": "Regulatory mastery — navigating complex safety regulations with precision",
+    "p3": "Proactive safety strategies that reduce workplace risk and lift efficiency"
+  },
+  "iso": {
+    "dh": "ISO certification brochure",
+    "dp": "The full certification portfolio, our accreditations and the five-step process, in one two-page document.",
+    "dm": "PDF · 2 pages · French & English · 468 KB",
+    "cover": "<img src='assets/img/iso-cover-en.jpg' alt='RIM-HSE ISO certification brochure cover' loading='lazy' width='440' height='660'>",
+    "tag": "ISO Certification",
+    "h2": "Certify today, lead tomorrow.",
+    "p": "Internationally recognised, locally delivered, globally trusted. With AQC and MMS Certification, RIM-HSE takes your organisation from first enquiry through to a certified management system.",
+    "a1": "UAF accredited",
+    "a2": "IAF member",
+    "a3": "EGAC CAB #012226",
+    "a4": "1,700+ certificates issued",
+    "a5": "10+ countries",
+    "c1h": "Quality & Management",
+    "c2h": "Environment & Safety",
+    "c3h": "Food Safety",
+    "c4h": "IT & Information Security",
+    "c5h": "Other Solutions",
+    "c5p": "Tailored solutions built around your own compliance and performance requirements.",
+    "sh": "Our certification process",
+    "s1": "Enquiry & application",
+    "s1p": "We start from your requirements and scope.",
+    "s2": "Document review & planning",
+    "s2p": "We review your system and plan the audit.",
+    "s3": "Audit",
+    "s3p": "On-site or remote audit by expert auditors.",
+    "s4": "Recommendation",
+    "s4p": "A successful audit leads to recommendation.",
+    "s5": "Certification",
+    "s5p": "Certificate issued within two weeks of recommendation.*",
+    "cta": "Request an ISO quote",
+    "dl": "Download the brochure",
+    "note": "Free preliminary visit, no hidden charges, and support throughout. *Terms and conditions apply."
+  },
+  "trn": {
+    "atpe": "Approved Training Provider",
+    "atph": "HiQual UK Ltd",
+    "atpp": "RIM-HSE is a recognised HiQual Approved Training Provider, authorised to run training sessions and programmes leading to HiQual certifications.",
+    "atpreg": "Licence ATP/004595/26",
+    "atpb": "View the licence",
+    "tag": "Training & Certification",
+    "h2": "Building workforce competence, one certification at a time.",
+    "p": "Industry-certified training programs designed to enhance workforce competence and ensure full compliance with international safety standards.",
+    "p1h": "Emergency Response",
+    "p1a": "Fire fighting",
+    "p1b": "First aid",
+    "p1c": "Emergency response",
+    "p1d": "Spill response",
+    "p2h": "Technical Safety",
+    "p2a": "Working at height",
+    "p2b": "Confined space entry",
+    "p2c": "Chemicals management",
+    "p3h": "HSE Management & Development",
+    "p3a": "Environment management",
+    "p3b": "Accident investigation methodologies",
+    "p3c": "Health & Safety officer modules",
+    "p3d": "HSE e-learning",
+    "cta": "Request a Training Quote",
+    "ctap": "Every course concludes with a verifiable RIM-HSE certificate — check any certificate's status through our online verification portal."
+  },
+  "stat": {
+    "1": "Serving Mauritania since",
+    "2": "Industrial sectors covered",
+    "3": "Certified training programs",
+    "4": "Verifiable certificates online"
+  },
+  "svc": {
+    "tag": "Our Services",
+    "h2": "Professional HSE solutions, end to end.",
+    "p": "Nineteen specialised service lines spanning consulting, training, inspection, and asset integrity — tailored to the industrial realities of Mauritania.",
+    "tab0": "All services",
+    "tab1": "Consulting & Advisory",
+    "tab2": "Inspection & Integrity",
+    "tab3": "Training & Competency",
+    "tab4": "Industry Sectors",
+    "c1k": "Consulting & Compliance",
+    "c1h": "Expert guidance for ISO 45001",
+    "c1p": "From audits and risk assessments (HAZID / HIRA) to environmental impact studies — ensuring your operations meet international standards.",
+    "c2k": "Technical Equipment",
+    "c2h": "High-quality safety gear",
+    "c2p": "Supply and calibration of gas detection equipment, PPE, and maintenance for critical fire suppression systems.",
+    "c3k": "Specialized Training",
+    "c3h": "Certified industry training",
+    "c3p": "Certified courses in Fire Safety, First Aid, and Working at Height — delivered by experienced HSE professionals.",
+    "cta": "Request a Quote",
+    "ctap": "Need a custom safety solution for your site? Our team is ready to discuss your specific requirements — from equipment calibration to site-wide safety audits."
+  },
+  "sv1": {
+    "h": "HSE Consultancy",
+    "p": "Helping organizations improve compliance, reduce risk, and strengthen safety culture."
+  },
+  "sv2": {
+    "h": "Health, Safety & Environmental Training",
+    "p": "Competency-based training delivered in Arabic, French and English."
+  },
+  "sv3": {
+    "h": "Engineering & Technical Consulting",
+    "p": "Technical support for industrial operations, engineering projects and infrastructure."
+  },
+  "sv4": {
+    "h": "Inspection & Asset Integrity",
+    "p": "Inspection, verification and integrity management of industrial assets."
+  },
+  "sv5": {
+    "h": "Fire Protection Engineering",
+    "p": "Industrial fire prevention, detection and protection solutions."
+  },
+  "sv6": {
+    "h": "Mechanical Integrity & NDT",
+    "p": "Piping, tanks, pressure vessels and non-destructive testing support."
+  },
+  "sv7": {
+    "h": "Quality Assurance & Quality Control (QA/QC)",
+    "p": "Inspection, auditing and quality management systems."
+  },
+  "sv8": {
+    "h": "Dangerous Goods & Logistics Safety",
+    "p": "ADR, IMDG, IATA and hazardous materials management."
+  },
+  "sv9": {
+    "h": "Construction & Infrastructure Safety",
+    "p": "Construction HSE, CSTS, contractor management and site safety."
+  },
+  "sv10": {
+    "h": "Mining Safety Solutions",
+    "p": "Critical risk management and mining operational safety support."
+  },
+  "sv11": {
+    "h": "Oil & Gas HSE Services",
+    "p": "Onshore, offshore and logistics HSE consulting and compliance."
+  },
+  "sv12": {
+    "h": "Telecom Safety Services",
+    "p": "Tower safety, rescue, RF awareness and telecom infrastructure support."
+  },
+  "sv13": {
+    "h": "Lifting Operations & Crane Safety",
+    "p": "Planning, supervision, lifting studies and competency development."
+  },
+  "sv14": {
+    "h": "Fleet & Driver Safety",
+    "p": "Defensive driving, fleet management and driver trainer programmes."
+  },
+  "sv15": {
+    "h": "Emergency Preparedness & Crisis Management",
+    "p": "Emergency response planning, drills and business continuity."
+  },
+  "sv16": {
+    "h": "Environmental Services",
+    "p": "Environmental assessments, compliance, monitoring and sustainability."
+  },
+  "sv17": {
+    "h": "Training Needs Analysis & Competency Development",
+    "p": "Competency frameworks, skills assessments and learning pathways."
+  },
+  "sv18": {
+    "h": "HSE Documentation & Management Systems",
+    "p": "Development of manuals, procedures, SOPs, PTW systems and risk registers."
+  },
+  "sv19": {
+    "h": "Third-Party Inspection Coordination",
+    "p": "Coordination with internationally recognized inspection and certification partners."
+  },
+  "op": {
+    "1h": "HSE Management",
+    "1p": "System development, compliance audits, and major accident investigations.",
+    "2h": "Operational Excellence",
+    "2p": "SOP and Work Instruction development, and lifting equipment inspection.",
+    "3h": "Environmental Oversight",
+    "3p": "Permitting, due diligence, and social impact studies.",
+    "4h": "Emergency Planning",
+    "4p": "Development of emergency procedures and waste management protocols.",
+    "5h": "Workforce Solutions",
+    "5p": "Maintenance and skilled manpower services for industrial environments."
+  },
+  "gal": {
+    "tag": "Our Work",
+    "h2": "Safety in action, across every site.",
+    "p": "Moments from RIM-HSE training sessions, field audits, and safety operations across Mauritania and the wider region."
+  },
+  "tc1e": {
+    "_": "Safety First"
+  },
+  "tc1h": {
+    "_": "First Aid Training"
+  },
+  "tc2e": {
+    "_": "High Risk"
+  },
+  "tc2h": {
+    "_": "Working at Height"
+  },
+  "tc3e": {
+    "_": "Audit"
+  },
+  "tc3h": {
+    "_": "Risk Assessment"
+  },
+  "tc4e": {
+    "_": "Emergency"
+  },
+  "tc4h": {
+    "_": "Fire Fighting"
+  },
+  "ch": {
+    "1": "Fire Safety",
+    "2": "First Aid",
+    "3": "Emergency Response",
+    "4": "Spill Response",
+    "5": "Working at Height",
+    "6": "Confined Space Entry",
+    "7": "Chemicals Management",
+    "8": "Environment Management",
+    "9": "Accident Investigation",
+    "10": "H&S Officer Modules",
+    "11": "HSE E-Learning",
+    "12": "Risk Assessment"
+  },
+  "ab": {
+    "tag": "Who We Are",
+    "h2": "Protecting lives. Empowering safety and the environment.",
+    "p": "RIM-HSE — Réseau d'Ingénierie Mauritanien pour la Santé, la Sécurité et l'Environnement — is a Mauritanian-owned HSE consultancy and training company, established in 2017 and headquartered in Nouakchott. We bridge the gap between international safety standards and local operational requirements, helping clients mitigate risk, ensure compliance, and prioritise their most valuable asset: their people.",
+    "mh": "Our Mission",
+    "mp": "To deliver high-quality HSE training, consulting, and safety solutions that help businesses meet international standards, reduce risks, and build a sustainable culture of safety.",
+    "vh": "Our Vision",
+    "vp": "To be the trusted leader in health, safety, and environmental excellence across Mauritania and West Africa — empowering organizations to protect lives, property, and the planet."
+  },
+  "v": {
+    "1h": "Integrity",
+    "1p": "We uphold the highest ethical standards in everything we do, ensuring trust and transparency with our clients and partners.",
+    "2h": "Responsibility",
+    "2p": "We believe in protecting people and the environment by promoting safe work practices and regulatory compliance.",
+    "3h": "Partnership",
+    "3p": "We work hand-in-hand with clients, regulators, and stakeholders to achieve shared goals in HSE performance.",
+    "4h": "Innovation",
+    "4p": "We embrace technology and best practices to deliver effective, forward-thinking HSE solutions."
+  },
+  "sec": {
+    "l": "Serving Mauritania's key industries since 2017",
+    "1": "Mining",
+    "2": "Oil & Gas",
+    "3": "Ports & Marine",
+    "4": "Logistics & Warehousing",
+    "5": "Construction",
+    "6": "Telecommunications",
+    "7": "Utilities & Power",
+    "8": "Manufacturing",
+    "9": "Renewable Energy",
+    "10": "Agriculture & Food Processing",
+    "11": "Government & Public Sector",
+    "12": "Commercial & Industrial Facilities"
+  },
+  "cl": {
+    "tag": "Clients & Partners",
+    "h2": "Trusted across sectors, with consistently positive feedback.",
+    "p": "RIM-HSE has proudly partnered with organizations across telecommunications, mining, agriculture, and oil & gas to deliver expert HSE training, audits, and consulting services.",
+    "nb": "Your logo could be here.",
+    "nt": "Join the growing list of Mauritanian and international organisations that rely on RIM-HSE for training, audits, and compliance support. References and client case details are available on request —",
+    "nl": "get in touch"
+  },
+  "ts": {
+    "1h": "Outstanding professionalism and technical competence.",
+    "1q": "RIM-HSE managed the installation and maintenance of our generators and solar panels while demonstrating deep HSEQ commitment. They consistently prove their competence and professionalism in the field.",
+    "1n": "Abdellatif Boumediane",
+    "1r": "General Manager · TotalEnergies Mauritanie",
+    "2h": "A massive contribution to safety excellence for our partners.",
+    "2q": "A sincere thank you to the RIM-HSE Training Center for their outstanding dedication in delivering vital safety training sessions — First Aid, Fire Fighting, Risk Assessment, and Work at Height — to our suppliers. Their professional guidance has significantly enhanced our partners' safety skills, marking a major step toward a safer working environment.",
+    "2n": "Adly Magdy",
+    "2r": "Delivery Operation Center · Huawei / H-Partners",
+    "3h": "Flawless execution of HSE general inspections.",
+    "3q": "RIM-HSE successfully performed our comprehensive HSE inspections, including vital electrical safety evaluations, gap assessments, and rigorous quality control checks.",
+    "3n": "Mohamed Lemine Mamine",
+    "3r": "Director General · RIMATEL SA",
+    "4h": "Fully responded to all of our expectations.",
+    "4q": "RIM-HSE successfully delivered critical safety training to our personnel covering Work at Height, Electrical Safety, Firefighting, and First Aid. The programs were executed strictly in accordance with current standards and fully met our corporate expectations.",
+    "4n": "Management Team",
+    "4r": "EDM-SARL & DECOTECH SARL",
+    "5h": "Excellent emergency response preparation.",
+    "5q": "RIM-HSE provided exceptional HSE services, perfectly training our Emergency Response Team (ERT) in fire fighting and first aid, as well as successfully developing and testing our facility evacuation plans.",
+    "5n": "Lalty Senhoury",
+    "5r": "Procurement Department · Elite Agro Mauritania"
+  },
+  "ve": {
+    "tag": "Verify Certificate",
+    "h2": "Confirm any RIM-HSE credential in seconds.",
+    "p": "A public verification tool for employers and contractors — check the holder, standard and validity of any certificate we issue."
+  },
+  "ce": {
+    "tag": "Certificate Verification Portal",
+    "h2": "Need to check the status of a certificate?",
+    "p": "Verify the authenticity and validity of any training certificate issued by RIM-HSE. Enter the certificate ID to view the holder, training, and validity instantly — an essential assurance for employers and contractors.",
+    "inlabel": "Certificate ID",
+    "ph": "e.g. RIMHSE/12/24/01",
+    "verify": "Verify",
+    "empty": "Enter a certificate ID to verify its holder, standard and validity.",
+    "loading": "Checking…",
+    "neterror": "Couldn't reach the verification service. Please try again in a moment.",
+    "valid": "Valid",
+    "expired": "Expired",
+    "notfound": "No record found",
+    "notfoundmsg": "We couldn't find a certificate with that ID. Please check the number and try again.",
+    "rc": "Company",
+    "ri": "Issue Date",
+    "rs": "Status",
+    "btn": "Verify a Certificate",
+    "ok": "Record Found — Valid",
+    "r1": "Full Name",
+    "r1v": "A. Participant",
+    "r2": "Certificate",
+    "r2v": "Working at Height",
+    "r3": "Serial No.",
+    "r4": "Expiry Date"
+  },
+  "co": {
+    "tag": "Get in Touch",
+    "hd": "Ready to improve your workplace safety?",
+    "p": "Reach out today to schedule a service, request a quote, or book a consultation.",
+    "d": "Contact Details",
+    "bh": "Book a Consultation",
+    "e": "Email",
+    "t": "Phone",
+    "a": "Address",
+    "av": "Avenue Feu Président Yasser Arafat, ZRB 32<br>BP 2852 — Nouakchott, Mauritania",
+    "wa": "Contact us on WhatsApp",
+    "hh": "Business Hours",
+    "h1": "Monday — Thursday",
+    "h2": "Friday",
+    "lh": "Location",
+    "lp": "Nouakchott, Mauritania —",
+    "map": "Open in Google Maps",
+    "gh": "Languages",
+    "gp": "We serve clients in English, French, and Arabic."
+  },
+  "bk": {
+    "name": "Full name",
+    "company": "Company",
+    "email": "Email",
+    "phone": "Phone",
+    "service": "Service of interest",
+    "s0": "General enquiry",
+    "s1": "Consulting & Advisory",
+    "s2": "Inspection & Integrity",
+    "s3": "Training & Competency",
+    "s4": "Industry Sectors",
+    "msg": "Message",
+    "msgph": "Tell us about your requirements…",
+    "send": "Send request",
+    "note": "Opens your email to enquiries@rim-hse.com"
+  }
+}
