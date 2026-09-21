@@ -397,6 +397,6 @@
     "msg": "Message",
     "msgph": "Décrivez vos besoins…",
     "send": "Envoyer la demande",
-    "note": "Ouvre votre messagerie vers enquiries@rim-hse.com"
+    "note": "Ouvre votre messagerie vers {{email}}"
   }
 }

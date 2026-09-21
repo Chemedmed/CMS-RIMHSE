@@ -9,6 +9,7 @@ content/site.fr.json      French
 content/site.ar.json      Arabic
 content/gallery.json      gallery photos (full image, thumbnail, alt text)
 content/clients.json      client and partner logos
+content/contact.json      phone, WhatsApp and email — used everywhere they appear
 index.template.html       the page itself — markup, CSS, scripts
 scripts/build.mjs         assembles dist/index.html from the above
 ```
@@ -55,6 +56,21 @@ missing from French or Arabic, if the template refers to a key that no longer
 exists, or if a gallery photo or logo points at a file that is not in the
 repository. That check is the reason a bad edit fails in Actions instead of
 reaching the live site.
+
+## Contact details
+
+Phone, WhatsApp and email are set once in `content/contact.json` and written
+into every place they appear: the contact section, the footer, the WhatsApp
+button, the booking form's email link, the search-engine metadata, and the
+"opens your email to…" note in all three languages.
+
+Enter numbers the way they should be displayed (`+222 48 15 63 30`). The call
+link and the `wa.me` link are built from the digits, so spacing does not
+matter. The build rejects a number with fewer than 8 digits or a malformed
+email address, so a typo fails in Actions rather than reaching the site.
+
+In templates and translations, use `{{phone}}`, `{{phone_link}}`,
+`{{whatsapp_link}}` or `{{email}}` instead of writing the value out.
 
 ## Adding new text
 

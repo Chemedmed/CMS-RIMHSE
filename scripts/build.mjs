@@ -37,6 +37,16 @@ const flatten = (grouped) => {
   return out;
 };
 const dict = Object.fromEntries(LANGS.map((l) => [l, flatten(readJSON(`content/site.${l}.json`))]));
+const contact = readJSON('content/contact.json');
+const digits = (v) => String(v ?? '').replace(/\D/g, '');
+const tokens = {
+  phone: String(contact.phone ?? '').trim(),
+  phone_link: '+' + digits(contact.phone),
+  whatsapp_link: digits(contact.whatsapp),
+  email: String(contact.email ?? '').trim(),
+};
+const fill = (text) => text.replace(/\{\{(\w+)\}\}/g, (m, k) => (k in tokens ? tokens[k] : m));
+for (const l of LANGS) for (const k in dict[l]) dict[l][k] = fill(dict[l][k]);
 const gallery = readJSON('content/gallery.json').photos ?? [];
 const clients = readJSON('content/clients.json').logos ?? [];
 let html = read('index.template.html');
@@ -59,6 +69,9 @@ for (const p of gallery) {
 for (const c of clients) {
   if (c.logo && !existsSync(join(root, c.logo))) problems.push(`client logo not found: ${c.logo}`);
 }
+if (digits(contact.phone).length < 8) problems.push(`contact.json: phone "${contact.phone}" needs at least 8 digits`);
+if (digits(contact.whatsapp).length < 8) problems.push(`contact.json: whatsapp "${contact.whatsapp}" needs at least 8 digits`);
+if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(tokens.email)) problems.push(`contact.json: email "${contact.email}" is not a valid address`);
 if (problems.length) {
   console.error('Build failed:\n  - ' + problems.join('\n  - '));
   process.exit(1);
@@ -77,6 +90,7 @@ const clientsHTML = clients
   .map((c) => `      <div class="logo"><img src="${attr(c.logo)}" alt="${attr(c.name)}" loading="lazy"></div>`)
   .join('\n');
 
+html = fill(html);
 html = html.replace('__GALLERY__', galleryHTML).replace('__CLIENTS__', clientsHTML);
 
 /* ---------- 2. English text into the markup ---------- */
@@ -108,6 +122,12 @@ html = html.replace(/(\bdata-i18n-ph="([^"]+)"[^>]*?\bplaceholder=")[^"]*(")/g, 
 const payload = Object.fromEntries(LANGS.map((l) => [l, dict[l]]));
 html = html.replace('__I18N__', JSON.stringify(payload).replace(/<\/script/gi, '<\\/script'));
 
+const leftover = [...new Set(html.match(/\{\{\w+\}\}/g) ?? [])];
+if (leftover.length) {
+  console.error('Build failed:\n  - unknown placeholder(s): ' + leftover.join(', '));
+  process.exit(1);
+}
+
 /* ---------- write ---------- */
 const dist = join(root, 'dist');
 rmSync(dist, { recursive: true, force: true });
@@ -123,3 +143,4 @@ console.log(`  languages      ${LANGS.join(', ')} (${enKeys.length} keys each)`)
 console.log(`  text injected  ${injected} elements, ${phInjected} placeholders`);
 console.log(`  gallery        ${gallery.length} photos`);
 console.log(`  clients        ${clients.length} logos`);
+console.log(`  contact        ${tokens.phone} · WhatsApp ${tokens.whatsapp_link} · ${tokens.email}`);

@@ -21,6 +21,28 @@ media:
     extensions: [pdf]
 
 content:
+  - name: contact
+    label: Contact details
+    type: file
+    path: content/contact.json
+    format: json
+    fields:
+      - name: phone
+        label: Phone number
+        type: string
+        description: As it should appear on the site, e.g. +222 48 15 63 30. The call link is generated from the digits.
+        required: true
+      - name: whatsapp
+        label: WhatsApp number
+        type: string
+        description: Full international number, e.g. +222 48 15 63 30. Spaces and + are fine; the wa.me link keeps digits only.
+        required: true
+      - name: email
+        label: Email address
+        type: string
+        description: Shown in the contact section and footer, and used by the booking form.
+        required: true
+
   - name: gallery
     label: Gallery
     type: file
